@@ -160,20 +160,23 @@ a {
 
 /*Team*/
 .team-bg {
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1454px;
+
     background: #F5F4FA;
 }
 .teammembers-names {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 .teammembers-position {
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #757575;   
 }
