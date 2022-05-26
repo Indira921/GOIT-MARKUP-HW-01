@@ -260,16 +260,11 @@ margin-bottom: 32px;
 }
 
 /* Чем мы занимаемся */
-.what-we-do {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    width: 1170px;
-    height: 386px;
 
-    background-color: tomato;
-    margin: 94px 215px;
+.services-container {
+    width: 1200px;
+    margin: 0 215px;
+    padding: 0 15px;
 }
 .heads2 {
     margin-bottom: 50px;
@@ -281,19 +276,16 @@ margin-bottom: 32px;
     letter-spacing: 0.03em;
     color: #212121;
 }
-.services-container {
+.services-list {
     display: flex;
     flex-direction: row;
     width: 1170px;
     margin: 0;
+    padding: 0;
 }
-.services-box {
+.services-list-item:not(last-child) {
     margin-right: 30px;
 }
-.services-box:nth-child(3) {
-    margin-right: 0;
-}
-
 
 /*Team*/
 .our-team-container {
