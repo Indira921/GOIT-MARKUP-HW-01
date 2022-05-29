@@ -17,7 +17,8 @@
   <body>
     <!--Шапка сайта-->
         <header class="header">
-               <a href="" class="webstudio-logo">Web<span class="accent">Studio</span></a>
+          <div class="container">
+          <a href="" class="webstudio-logo">Web<span class="accent">Studio</span></a>
 
         <nav>
           <ul class="site-nav">
@@ -27,13 +28,14 @@
           </ul>
         </nav>
         <ul class="contacts-links">
-          <li><a class="contacts-links1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="contacts-links2" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contacts-links1"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contacts-links2"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
       </header>
 
       <main>
-      <section> <div class="main-head-bg">
+      <section> <div class="main-container">
         <h1 class="main-head">Эффективные решения для вашего бизнеса</h1>
         <button type="button" name="order-button" class="order-button">Заказать услугу</button>
       </div>
@@ -41,41 +43,38 @@
 
 
      <!--Что мы предлагаем-->
-      <section>
-        <h2 class="heads1">Что мы предлагаем</h2>
+      <section><div class="second-container">
+        <h2 class="visually-hidden">Что мы предлагаем</h2>
       <ul class="what-we-offer">
-          <li> <div class="description-box">
+          <li class="description-box">
             <h3 class="description-head">Внимание к деталям</h3>
             <p class="description"> Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
-          </div>
-          </li>
-          <li> <div class="description-box">
+            </li>
+          <li class="description-box">
             <h3 class="description-head">Пунктуальность</h3>
             <p class="description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
-            </div>
           </li>
-          <li> <div class="description-box">
+          <li class="description-box">
             <h3 class="description-head">Планирование</h3>
             <p class="description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
-            </div>
             </li>
-          <li> <div class="description-box">
+          <li class="description-box">
             <h3 class="description-head">Современные технологии</h3>
             <p class="description">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
-        </div>
       </li>
         </ul>
+      </div>
       </section>
 
       <!--Чем мы занимаемся-->
@@ -158,18 +157,16 @@
     </main>
 
     <!--Подвал-->
-    <footer>
-      <div class="footer-bg">
-      <a href="" class="webstudio-logo">Web<span class="accent-footer">Studio</span></a>
+    <footer> <div class="footer-container">
+       <a href="" class="webstudio-logo">Web<span class="accent-footer">Studio</span></a>
         <address>
-            <ul>
-              <li><a class="footer-links1" href="https://goo.gl/maps/FCJh6KjiG2ZxYmKU6" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a> </li>
-              <li><a class="footer-links" href="mailto:info@example.com"> info@example.com</a></li>
-            <li><a class="footer-links" href="tel:+380991111111"> +38 099 111 11 11</a></li>
+            <ul class="footer-links">
+            <li class="footer-links1"> <a href="https://goo.gl/maps/FCJh6KjiG2ZxYmKU6" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a> </li>
+            <li class="footer-links2"> <a href="mailto:info@example.com"> info@example.com</a></li>
+            <li class="footer-links3"> <a href="tel:+380991111111"> +38 099 111 11 11</a></li>
             </ul>
         </address>
       </div>
-    </footer>
-    
+    </footer>   
     </body>
     </html>
