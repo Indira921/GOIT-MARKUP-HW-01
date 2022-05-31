@@ -43,18 +43,16 @@ h4 {
 
 /*Шапка сайта*/
 .header {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    width: 1200px;
-    height: 80px;
     border-bottom: 1px solid #ECECEC;
 }
 .container {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.container-design {
     display: flex;
     align-items: center;
 }
@@ -80,7 +78,6 @@ h4 {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 93px;
 }
 .site-nav .item {
     display: block; 
@@ -157,19 +154,23 @@ h4 {
 
 
 /* Main Head Section bg */
-.main-container {
-    max-width: 1600px;
+
+.hero {
+    padding: 200px 0; 
+    background: #2F303A;
+    text-align: center; 
+    width: 1600px; 
     margin-left: auto;
     margin-right: auto;
-padding-right: 15px;
-padding-left: 15px;
-
-    background: #2F303A;
-    padding-bottom: 200px;
-    padding-top: 200px;
-    text-align: center;
 }
- 
+.main-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .main-head {
     margin: 0 auto 30px;
     max-width: 696px;
@@ -205,19 +206,14 @@ padding-left: 15px;
     background-color: #188CE8;
 }
 
-
-
-
-
 /* Что мы предлагаем  */
 
 .second-container {
-    max-width: 1070px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 94px; 
 }
 .visually-hidden {
     position: fixed;
@@ -234,7 +230,7 @@ padding-left: 15px;
     width: 270px;
     padding: 0;
 }
-.description-box:not(:last child) {
+.description-box:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -261,8 +257,7 @@ padding-left: 15px;
 /* Чем мы занимаемся */
 
 .services-container {
-    text-align: center;
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -281,30 +276,29 @@ padding-left: 15px;
 }
 .services-list {
     display: flex;
-    flex-direction: row;
-    width: 1170px;
     margin: 0;
     padding: 0;
 }
-.services-list-item:not(last-child) {
+.services-list-item:not(:last-child) {
     margin-right: 30px;
 }
 
 /*Team*/
-.our-team-container {
-    padding-left: 15px;
-    padding-right: 15px;
+.our-team {
+    padding: 94px 0;
+    text-align: center;
+    background: #F5F4FA;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0; 
-    text-align: center;
-
-    width: 1600px;
-    max-height: 648px;
-    margin-top: 94px;
-    margin-bottom: 0;
-    
-    background: #F5F4FA;
+}
+.our-team-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
 }
 .heads3 {
     font-weight: 700;
@@ -313,9 +307,6 @@ padding-left: 15px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-
-    margin-top: 94px;
-    margin-bottom: 50px;
 }
 
 .team-container {
@@ -323,18 +314,20 @@ padding-left: 15px;
     flex-direction: row;
     justify-content: space-between;  
     width: 1170px;
-    margin-top: 0;
+    margin-top: 50px;
     margin-bottom: 0;
     padding-left: 0;
     margin-left: auto;
     margin-right: auto;
 }
-    .teammembers-names {
+.teammembers-names {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .teammembers-position {
     font-size: 16px;
@@ -349,6 +342,12 @@ padding-left: 15px;
     padding: 0;
     max-width: 270px;
     height: 368px;
+
+    background: #FFFFFF;
+/* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-card:last-child {
     margin-right: 0;
@@ -410,43 +409,30 @@ padding-left: 15px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* PORTFOLIO PAGE */
-.page-header {
-    display: flex;
-    flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #607d8b;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.portfolio-hero-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
+.portfolio-hero-container.site-nav {
+    text-align:center;
+}
+.site-nav.filter-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
 .filter-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 611px;
-    height: 54px;
-    left: 495px;
-    top: 174px;
-    
-    margin: 0 auto 34px ;
-    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .site-nav .button {
@@ -462,6 +448,7 @@ padding-left: 15px;
 
 .site-nav .button {
     cursor: pointer;
+    margin-right: 8px;
 }
 
 .site-nav .button:hover,
@@ -472,6 +459,7 @@ padding-left: 15px;
 }
 .button-1 {
 background: #2196F3;
+margin-right: 8px;
 
 /* shadow-middle */
 
@@ -496,23 +484,11 @@ background: #F5F4FA;
 border-radius: 4px;
 }
 
-
-/* PORTFOLIO-CONTAINER*/
-
-.portfolio-hero-container {
-    width: 1170px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
-    
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
 }
 
 .portfolio-container-element {
